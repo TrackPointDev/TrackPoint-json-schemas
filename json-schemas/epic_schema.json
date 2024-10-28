@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Epic",
+    "type": "object",
+    "properties": {
+      "feature": {
+        "type": "string",
+        "description": "The feature associated with the epic."
+      },
+      "problem": {
+        "type": "string",
+        "description": "The problem statement for the epic."
+      },
+      "tasks": {
+        "type": "array",
+        "description": "A list of tasks associated with the epic.",
+        "items": {
+          "$ref": "task_schema.json"
+        },
+        "minItems": 1,
+        "uniqueItems": true
+      },
+      "title": {
+        "type": "string",
+        "description": "The title of the epic."
+      },
+      "value": {
+        "type": "string",
+        "description": "The value associated with the epic."
+      }
+    },
+    "required": ["feature", "problem", "tasks", "title", "value"]
+  }
+  
