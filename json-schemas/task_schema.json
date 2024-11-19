@@ -22,8 +22,12 @@
       "story_point": {
         "type": "number",
         "description": "The story points assigned to the task."
+      },
+      "title": {
+        "type": "string",
+        "description": "The title assigned to the task."
       }
     },
-    "required": ["description", "priority", "story_point"]
+    "required": ["description", "priority", "story_point", "title"]
   }
   
