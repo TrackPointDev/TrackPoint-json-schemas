@@ -12,7 +12,7 @@
         "description": "A description of the task."
       },
       "issueID": {
-        "type": ["string", "null"],
+        "type": ["number", "null"],
         "description": "The issue ID associated with the task."
       },
       "priority": {
