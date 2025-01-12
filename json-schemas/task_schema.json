@@ -20,7 +20,7 @@
         "description": "The priority level of the task."
       },
       "story_point": {
-        "type": "number",
+        "type": ["number", "null"],
         "description": "The story points assigned to the task."
       },
       "title": {
