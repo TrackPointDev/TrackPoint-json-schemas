@@ -1,0 +1,32 @@
+{
+    "title": "User",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The name of the user."
+      },
+      "email": {
+        "type": "string",
+        "description": "The email of the user.",
+        "default": "user@example.org"
+      },
+      "role": {
+        "type": "string",
+        "description": "The role of the user."
+      },
+      "uID": {
+        "type": "string",
+        "description": "The unique ID of the user."
+      },
+      "epics": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "A list of epics associated with the user."
+      }
+    },
+    "required": ["name"]
+  }
+  

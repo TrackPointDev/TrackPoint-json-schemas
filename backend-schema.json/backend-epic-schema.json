@@ -1,0 +1,61 @@
+{
+    "title": "Epic",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "The title of the epic."
+      },
+      "problem": {
+        "type": "string",
+        "description": "The problem statement of the epic."
+      },
+      "feature": {
+        "type": "string",
+        "description": "The feature statement of the epic."
+      },
+      "value": {
+        "type": "string",
+        "description": "The value statement of the epic."
+      },
+      "tasks": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/Task"
+        },
+        "description": "A list of tasks associated with the epic."
+      },
+      "users": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/User"
+        },
+        "description": "A list of users associated with the epic."
+      },
+      "spreadsheetId": {
+        "type": "string",
+        "description": "The spreadsheet ID of the epic."
+      },
+      "secret": {
+        "type": "string",
+        "description": "A secret field.",
+        "default": "mysecretstring1234"
+      },
+      "installationID": {
+        "type": "integer",
+        "description": "The installation ID of the epic."
+      },
+      "repoOwner": {
+        "type": "string",
+        "description": "The repository owner of the epic.",
+        "default": "TrackPointDev"
+      },
+      "repoName": {
+        "type": "string",
+        "description": "The repository name of the epic.",
+        "default": "TrackPointTest"
+      }
+    },
+    "required": ["title"]
+  }
+  

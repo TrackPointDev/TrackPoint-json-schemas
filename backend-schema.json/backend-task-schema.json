@@ -1,0 +1,37 @@
+{
+    "title": "Task",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "The title of the task."
+      },
+      "comments": {
+        "type": "string",
+        "description": "Comments on the task."
+      },
+      "description": {
+        "type": "string",
+        "description": "A description of the task."
+      },
+      "issueID": {
+        "type": "integer",
+        "description": "The github issue ID associated with the task."
+      },
+      "priority": {
+        "type": "string",
+        "description": "The priority level of the task.",
+        "enum": ["low", "medium", "high"]
+      },
+      "story_point": {
+        "type": "integer",
+        "description": "The story points assigned to the task."
+      },
+      "taskID": {
+        "type": "integer",
+        "description": "The task ID of the task."
+      }
+    },
+    "required": ["title", "taskID"]
+  }
+  
