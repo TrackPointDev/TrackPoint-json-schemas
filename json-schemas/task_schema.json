@@ -28,6 +28,6 @@
         "description": "The title assigned to the task."
       }
     },
-    "required": ["description", "priority", "story_point", "title"]
+    "required": ["description", "title"]
   }
   
